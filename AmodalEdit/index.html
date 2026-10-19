@@ -299,8 +299,10 @@
       <img src="./static/images/intro_01.png" alt="Teaser figure" />
 
       <h2 class="subtitle has-text-centered">
-        <!-- TODO: 一句话说明这张图想表达什么 -->
-        TODO: describe what this teaser figure shows. AmodalEdit takes &lt;input&gt; and produces &lt;output&gt;, outperforming prior methods.
+        <!-- TODO: 图注可按论文口径再润色 -->
+        AmodalEdit follows natural-language instructions to perform amodal edits such as
+        <i>move</i>, <i>add</i>, <i>remove</i>, <i>replace</i> and <i>resize</i> in a single turn (a),
+        and supports multi-turn editing where each instruction builds on the previous result (b).
       </h2>
     </div>
   </div>
@@ -333,34 +335,37 @@
       <img src="./static/images/net_02.png" alt="Method overview" />
 
       <h2 class="subtitle has-text-centered">
-        <!-- TODO: 一句话概述方法框架 -->
-        Overview of the proposed AmodalEdit framework: TODO describe the main modules and their interactions.
+        <!-- TODO: 图注可按论文口径再润色 -->
+        Overview of AmodalEdit. Given an editing instruction, we first build an instruction graph that
+        separates target objects from non-target ones, then perceive the amodal layout with semantic,
+        occlusion and context encoders, and finally inject editing / preserving tokens into a diffusion
+        model through an instruction amodal adapter.
       </h2>
     </div>
   </div>
 </section>
 
 <!-- Qualitative results -->
-<!-- TODO: 如果暂时没有对比图，可以整段删除；也可以换成 bulma-carousel（参考模板首页其他示例） -->
-<section class="section">
+<section class="hero teaser">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
     <div class="hero-body">
-      <img src="./static/images/intro_01.png" alt="Qualitative comparison" />
+      <h2 class="title">Qualitative Results</h2>
+      <img src="./static/images/qualitative.png" alt="Qualitative comparison" />
       <h2 class="subtitle has-text-centered">
-        TODO: replace with your own comparison figure (static/images/*.png).
+        <!-- TODO: 图注可按论文口径再润色 -->
+        Qualitative comparison with UltraEdit, SmartEdit, AnyEdit, SmartFreeEdit, ICEdit and IEAP.
+        AmodalEdit follows the instruction faithfully while leaving unrelated regions untouched.
       </h2>
     </div>
   </div>
 </section>
 
 <!-- Video Presentation -->
-<!-- TODO: 把演示视频放到 static/videos/video.mp4，或直接删掉这一整段 section -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="title">Video Presentation</h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <video poster="static/videos/poster.jpg" id="tree" autoplay controls muted loop playsinline height="100%" preload="metadata">
         <source src="static/videos/video.mp4" type="video/mp4">
       </video>
     </div>
