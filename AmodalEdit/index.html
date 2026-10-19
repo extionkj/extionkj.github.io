@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       TODO: 只需替换下面四处域名即可上线
+       https://extionkj.github.io/AmodalEdit/
+       ============================================================ -->
+
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="AmodalEdit: TODO_FULL_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- Authors -->
+  <meta name="author" content="Author One, Author Two, Author Three">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="AmodalEdit: TODO_FULL_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:url" content="https://extionkj.github.io/AmodalEdit/">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://extionkj.github.io/AmodalEdit/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AmodalEdit - Research Preview">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Author One">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="AmodalEdit: TODO_FULL_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://extionkj.github.io/AmodalEdit/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="AmodalEdit - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="AmodalEdit: TODO_FULL_TITLE">
+  <meta name="citation_author" content="One, Author">
+  <meta name="citation_author" content="Two, Author">
+  <meta name="citation_author" content="Three, Author">
+  <meta name="citation_publication_date" content="2026">
+  <!-- TODO: conference name, e.g. CVPR / ICCV / ECCV -->
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://extionkj.github.io/AmodalEdit/static/pdfs/paper.pdf">
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>AmodalEdit: TODO_FULL_TITLE | Academic Research</title>
+  <link rel="canonical" href="https://extionkj.github.io/AmodalEdit/">
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/favicon.png">
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "AmodalEdit: TODO_FULL_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Author One",
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "INSTITUTION_OR_LAB_NAME"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Author Two",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_OR_LAB_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Author Three",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_OR_LAB_NAME"
+        }
+      }
+    ],
+    "datePublished": "2026-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_NAME"
+    },
+    "url": "https://extionkj.github.io/AmodalEdit/",
+    "image": "https://extionkj.github.io/AmodalEdit/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "@inproceedings{YourBibKey2026, title={AmodalEdit: TODO_FULL_TITLE}, author={One, Author and Two, Author and Three, Author}, booktitle={CONFERENCE_NAME}, year={2026}, url={https://extionkj.github.io/AmodalEdit/}}",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://extionkj.github.io/AmodalEdit/"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://extionkj.github.io/AmodalEdit/static/images/favicon.png",
+    "sameAs": [
+      "https://github.com/extionkj"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title" style="font-size: 2.7rem;">AmodalEdit: TODO Full Title of Your Paper
+</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Authors with personal links (update links if available) -->
+              <span class="author-block">
+                <a href="#" target="_blank">Author One</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Author Two</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Author Three</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Affiliations and conference info -->
+              <span class="author-block">INSTITUTION_OR_LAB_NAME</span><br>
+              <span class="author-block">CONFERENCE_NAME 2026</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- TODO: 把 paper.pdf 放到 static/pdfs/ 下 -->
+                <span class="link-block">
+                  <a href="static/pdfs/paper.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Replace with your arXiv URL -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/0000.00000" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Replace with your GitHub repository URL -->
+                <span class="link-block">
+                  <a href="https://github.com/extionkj/AmodalEdit" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Replace with your video URL；不需要可直接删除这一整段 link-block -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-video"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>
+                </span>
+
+                <!-- TODO: 数据集 / 补充材料，不需要可删除 -->
+                <span class="link-block">
+                  <a href="#" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser figure -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <img src="./static/images/intro_01.png" alt="Teaser figure" />
+
+      <h2 class="subtitle has-text-centered">
+        <!-- TODO: 一句话说明这张图想表达什么 -->
+        TODO: describe what this teaser figure shows. AmodalEdit takes &lt;input&gt; and produces &lt;output&gt;, outperforming prior methods.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            TODO: paste your abstract here. Briefly introduce the task you address, why prior
+            approaches fall short, what you propose (AmodalEdit) and how it works, and the key
+            quantitative / qualitative results on standard benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method overview -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <img src="./static/images/net_02.png" alt="Method overview" />
+
+      <h2 class="subtitle has-text-centered">
+        <!-- TODO: 一句话概述方法框架 -->
+        Overview of the proposed AmodalEdit framework: TODO describe the main modules and their interactions.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Qualitative results -->
+<!-- TODO: 如果暂时没有对比图，可以整段删除；也可以换成 bulma-carousel（参考模板首页其他示例） -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+    <div class="hero-body">
+      <img src="./static/images/intro_01.png" alt="Qualitative comparison" />
+      <h2 class="subtitle has-text-centered">
+        TODO: replace with your own comparison figure (static/images/*.png).
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Video Presentation -->
+<!-- TODO: 把演示视频放到 static/videos/video.mp4，或直接删掉这一整段 section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title">Video Presentation</h2>
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
+      <h2 class="title">BibTeX</h2>
+      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <i class="fas fa-copy"></i>
+        <span class="copy-text">Copy</span>
+      </button>
+    </div>
+    <!-- TODO: Replace with your real BibTeX entry -->
+    <pre id="bibtex-code"><code>@inproceedings{YourBibKey2026,
+  title     = {AmodalEdit: TODO Full Title of Your Paper},
+  author    = {One, Author and Two, Author and Three, Author},
+  booktitle = {CONFERENCE_NAME},
+  year      = {2026},
+  url       = {https://extionkj.github.io/AmodalEdit/}
+}</code></pre>
+  </div>
+</section>
+<!-- End BibTeX citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            Powered by <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
