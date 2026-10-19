@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <meta name="title" content="AmodalEdit: Advancing Instruction-Based Image Editing via Amodal Scene Layout Perception - Jiyun Sun, Zhichao Zeng, Xiyue Gao"> et al.
+  <meta name="title" content="AmodalEdit: Advancing Instruction-Based Image Editing via Amodal Scene Layout Perception">
   <meta name="description" content="AmodalEdit is a framework for instruction-based image editing that perceives amodal scene layout, enabling geometrically consistent edits of partially occluded objects.">
   <meta name="keywords" content="instruction-based image editing, amodal perception, scene layout, occluded object editing, diffusion model, computer vision">
   <!-- Authors -->
@@ -164,7 +164,7 @@
     },
     "url": "https://extionkj.github.io/AmodalEdit/",
     "image": "https://extionkj.github.io/AmodalEdit/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "keywords": ["instruction-based image editing", "amodal perception", "scene layout", "occluded object editing", "diffusion model", "computer vision"],
     "abstract": "Instruction-based image editing has recently attracted substantial interest for generative multimedia. While significant advances have been achieved, existing works mainly rely on the explicit visibility of target objects, posing significant challenges of geometric inconsistencies and texture artifacts when editing partially occluded objects. We demonstrate that such an assumption is often incorrect, as object interactions and occlusions commonly exist in scenarios. To tackle this challenge, we propose AmodalEdit, a new framework for instruction-based image editing via amodal scene layout perception. In particular, given an input image with text instructions, we first introduce an instruction graph construction module that maps the input modalities into a structured representation with object editing and occlusion attributes. We then adopt an amodal layout perception module to infer complete object masks and underlying relationships. Finally, we propose an instruction amodal adapter module to enforce global scene coherence by guiding target objects with instructions, while preserving the physical integrity of non-target objects. Experimental results demonstrate that AmodalEdit consistently surpasses state-of-the-art methods in structural integrity and physical plausibility. Furthermore, we showcase the superiority of AmodalEdit in multi-turn image editing by maintaining the amodal scene layout across editing sequences.",
     "citation": "@article{Sun2026AmodalEdit, title={AmodalEdit: Advancing Instruction-Based Image Editing via Amodal Scene Layout Perception}, author={Jiyun Sun and Zhichao Zeng and Xiyue Gao and Jiasheng Zhang and Jiangtao Cui and Xiaotian Qiao}, year={2026}, url={https://extionkj.github.io/AmodalEdit/}}",
     "isAccessibleForFree": true,
@@ -239,9 +239,14 @@
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- TODO: 把 paper.pdf 放到 static/pdfs/ 下 -->
+                <!-- TODO 四个按钮的 href 目前都指向本页，拿到正式链接后逐个替换：
+                     Paper  -> static/pdfs/paper.pdf
+                     Code   -> https://github.com/...
+                     Video  -> https://www.youtube.com/watch?v=... 或 static/videos/video.mp4
+                     Poster -> static/pdfs/poster.pdf -->
+
                 <span class="link-block">
-                  <a href="static/pdfs/paper.pdf" target="_blank"
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
@@ -250,19 +255,8 @@
                   </a>
                 </span>
 
-                <!-- 拿到 arXiv / 代码仓库链接后，删掉本行和末尾的注释符即可启用这两个按钮
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/0000.00000" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://github.com/extionkj/AmodalEdit" target="_blank"
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -270,7 +264,26 @@
                   <span>Code</span>
                   </a>
                 </span>
-                -->
+
+                <span class="link-block">
+                  <a href="#" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-video"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="#" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-image"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+                </span>
 
               </div>
             </div>
