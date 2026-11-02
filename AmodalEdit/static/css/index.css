@@ -205,6 +205,16 @@ body {
   margin-right: 0.5rem;
 }
 
+/* Corresponding-author marker (*) */
+.publication-authors .corresponding-mark {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.9em;
+  line-height: 0;
+  vertical-align: super;
+  cursor: help;
+}
+
 .publication-banner img {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
